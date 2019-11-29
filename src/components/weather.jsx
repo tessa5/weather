@@ -7,7 +7,7 @@ const Weather = (props) => {
                 <h1>{props.city}</h1>
                 <h4 className="py-5">
                     <div className="bb">
-                    <i className={`${props.weatherIcon}`}/>
+                    <i className={`wi ${props.weatherIcon} display-1`}/>
                     </div>
                 </h4>
                 {props.temp_fahrenheit ? (<h2 className="py-2">{props.temp_fahrenheit}&deg;</h2>): null}

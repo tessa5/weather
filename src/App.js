@@ -1,13 +1,7 @@
 import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import clear from "./icons/clear.png";
-import drizzle from "./icons/drizzle.png";
-import atmosphere from "./icons/atmosphere.png";
-import thunderstorm from "./icons/thunderstom.png";
-import rain from "./icons/rain.png";
-import clouds from "./icons/clouds.png";
-import snow from "./icons/snow.png";
+import "weather-icons/css/weather-icons.css"
 import './App.css';
 import Weather from "./components/weather";
 import Form from "./components/Form";
@@ -30,13 +24,13 @@ class App extends React.Component {
     };
 
     this.weatherIcon = {
-      drizzle: <img src = {drizzle} alt="drizzle"/>,
-      rain: <img src = {rain} alt="rain"/>,
-      clouds: <img src = {clouds} alt="clouds"/>,
-      thunderstorm: <img src= {thunderstorm} alt="thunderstorm"/>,
-      snow: <img src= {snow} alt="snow"/>,
-      atmosphere: <img src={atmosphere} alt="atmosphere"/>,
-      clear: <img src={clear} alt="clear"/>
+      drizzle: "wi-showers",
+      rain: "wi-rain",
+      clouds: "wi-cloudy",
+      thunderstorm: "wi-thunderstorm",
+      snow: "wi-snow",
+      atmosphere: "wi-day-sunny-overcast",
+      clear: "wi-day-sunny"
     }
   }
 
